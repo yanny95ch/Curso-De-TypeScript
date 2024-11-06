@@ -1,0 +1,21 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Typescript"
+  ],
+  "author": "Yani Chantre  yanny95ch@gmail.com",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "date-fns": "^4.1.0",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.17.12"
+  }
+}
