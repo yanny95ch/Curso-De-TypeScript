@@ -15,7 +15,7 @@ console.log(date2);
 
 //-----------------
 let myVAr;
-class MyDate {
+ export class MyDate {
     year: number;
     month: number;
     day: number;
