@@ -1,4 +1,4 @@
-import faker from '@faker-js/faker';
+import { faker } from '@faker-js/faker';
 
 import { Products } from './../models/product.model';
 import { CreateProductDto, UpdateProductDto } from './../dtos /product.dto';
@@ -14,11 +14,11 @@ export class ProductMemoryService implements ProductService {
   create(data: CreateProductDto): Products{
     const newProduct = {
       ...data,
-      id: faker.datatype.number(),
+      id: faker.number.int(),
       category: {
         id: data.categoryId,
         name: faker.commerce.department(),
-        image: faker.image.imageUrl(),
+        image: faker.image.url(),
       }
     }
     return this.add(newProduct);
